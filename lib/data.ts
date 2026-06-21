@@ -164,11 +164,12 @@ export const NAV = {
       ],
     },
     { label: "Cargo", href: "/cargo" },
-    { label: "Travel info", href: "/travel-info" },
+    { label: "White Nile Club", href: "/white-nile-club" },
     { label: "About", href: "/about" },
     { label: "Contact", href: "/contact" },
   ],
   utility: [
+    { label: "Sign in", href: "/white-nile-club/account" },
     { label: "Manage booking", href: "/manage" },
     { label: "Check-in", href: "/check-in" },
   ],

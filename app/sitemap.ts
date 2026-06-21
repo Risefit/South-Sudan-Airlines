@@ -19,6 +19,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/travel-info",
     "/careers",
     "/press",
+    "/white-nile-club",
+    "/white-nile-club/join",
+    "/white-nile-club/account",
   ];
 
   const dynamic = [

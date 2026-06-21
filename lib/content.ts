@@ -239,4 +239,19 @@ export const LEGAL: Record<string, LegalDoc> = {
       { h: "Managing cookies", p: "You can control cookies through your browser settings. Disabling essential cookies may affect how the website works." },
     ],
   },
+  "white-nile-club-terms": {
+    slug: "white-nile-club-terms",
+    title: "White Nile Club programme terms",
+    updated: "June 2026",
+    intro:
+      "These terms govern membership of the White Nile Club, the South Sudan Airlines frequent flyer programme. They are a pre-launch placeholder summary and will be replaced by the full programme terms before the programme launches.",
+    sections: [
+      { h: "Membership", p: "Membership of the White Nile Club is free and open to individuals. Each member is issued a unique membership number, which must appear on a booking for that flight to earn Nile Miles." },
+      { h: "Earning Nile Miles", p: "Members earn Nile Miles on eligible South Sudan Airlines flights. The number of Miles earned depends on the route and cabin, plus any tier bonus. Award (Nile) Miles do not expire; Status Miles are counted per membership year to determine tier." },
+      { h: "Tiers", p: "Members progress through tiers — Weaver, Crowned Crane, Shoebill and Fish Eagle — based on Status Miles earned within a membership year. Tier benefits are as published and may change. Thresholds shown on the website are illustrative until the programme launches." },
+      { h: "Redeeming Miles", p: "Award (Nile) Miles may be redeemed for award flights on the South Sudan Airlines network, subject to availability. The member pays applicable taxes and charges. Award pricing is set in the reservation system and may change." },
+      { h: "Changes and termination", p: "South Sudan Airlines may amend the programme, its benefits, earning and redemption rules, or terminate the programme, with reasonable notice where required by law." },
+      { h: "Contact", p: "Questions about the White Nile Club can be sent to care@ssairlines.com." },
+    ],
+  },
 };

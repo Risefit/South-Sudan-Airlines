@@ -188,7 +188,20 @@ export function SearchWidget({ variant = "hero" }: { variant?: "hero" | "page" }
         </div>
       </div>
 
-      <p className="px-4 pb-3 text-[0.7rem] text-slatey">
+      {variant === "page" && (
+        <div className="flex flex-col gap-1.5 border-t border-nile/10 px-4 py-3 sm:flex-row sm:items-center sm:gap-3">
+          <label className="text-[0.72rem] font-semibold uppercase tracking-[0.12em] text-slatey" htmlFor="ff-number">
+            White Nile Club number <span className="font-normal normal-case text-slatey/70">(optional — earn Nile Miles)</span>
+          </label>
+          <input
+            id="ff-number"
+            placeholder="WNC-XXXXXX"
+            className="flight-code w-full max-w-[180px] rounded-md border border-nile/15 bg-white px-3 py-1.5 text-sm uppercase text-ink focus:border-nile focus:outline-none focus:ring-2 focus:ring-nile/20"
+          />
+        </div>
+      )}
+
+      <p className="px-4 pb-3 pt-2 text-[0.7rem] text-slatey">
         Online booking is launching shortly with our reservation partner. Fares from{" "}
         <span className="font-semibold text-nile">USD 190</span> domestic.
       </p>

@@ -4,6 +4,7 @@ import { WhyFlyUs } from "@/components/WhyFlyUs";
 import { RouteMapPreview } from "@/components/RouteMapPreview";
 import { Fleet } from "@/components/Fleet";
 import { Destinations } from "@/components/Destinations";
+import { LoyaltyTeaser } from "@/components/LoyaltyTeaser";
 import { Press } from "@/components/Press";
 import { Footer } from "@/components/Footer";
 
@@ -17,6 +18,7 @@ export default function HomePage() {
         <RouteMapPreview />
         <Fleet />
         <Destinations />
+        <LoyaltyTeaser />
         <Press />
       </main>
       <Footer />

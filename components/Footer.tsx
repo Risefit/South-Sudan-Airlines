@@ -10,6 +10,7 @@ const COLUMNS = [
       { label: "Book a flight", href: "/book" },
       { label: "Routes & network", href: "/routes" },
       { label: "Schedule", href: "/schedule" },
+      { label: "White Nile Club", href: "/white-nile-club" },
       { label: "Manage booking", href: "/manage" },
       { label: "Check-in", href: "/check-in" },
     ],
