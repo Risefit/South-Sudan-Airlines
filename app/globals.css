@@ -1,0 +1,117 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --font-display: "Source Serif 4", Georgia, serif;
+    --font-body: "Inter", system-ui, sans-serif;
+    --font-mono: ui-monospace, "SFMono-Regular", monospace;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    -webkit-text-size-adjust: 100%;
+  }
+
+  body {
+    @apply bg-paper text-ink font-sans antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  /* Visible, on-brand focus ring for keyboard users (WCAG 2.4.7) */
+  :focus-visible {
+    outline: 2px solid #0a4f75;
+    outline-offset: 2px;
+    border-radius: 2px;
+  }
+
+  ::selection {
+    background: #d4a845;
+    color: #1f1f1f;
+  }
+}
+
+@layer components {
+  /* The recurring gold hairline — the site's connective tissue */
+  .hairline {
+    @apply h-px w-full bg-gold/60;
+  }
+
+  /* Section kicker: small caps label sitting above a serif title */
+  .kicker {
+    @apply font-sans text-[0.72rem] font-semibold uppercase tracking-kicker text-nile;
+  }
+
+  /* Flag tri-band rule used beneath kickers — Unity · Pride · Future */
+  .flag-rule {
+    display: inline-flex;
+    height: 3px;
+    width: 2.75rem;
+    overflow: hidden;
+    border-radius: 2px;
+  }
+  .flag-rule > span {
+    flex: 1;
+  }
+
+  .container-site {
+    @apply mx-auto w-full max-w-site px-5 sm:px-8;
+  }
+
+  /* Primary CTA — the one solid Nile-Blue action */
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 rounded-md bg-nile px-6 py-3
+      font-sans text-sm font-semibold text-paper transition-colors duration-200
+      hover:bg-nile-900 focus-visible:outline-offset-4;
+  }
+
+  .btn-ghost {
+    @apply inline-flex items-center justify-center gap-2 rounded-md border border-nile/20
+      bg-transparent px-6 py-3 font-sans text-sm font-semibold text-nile
+      transition-colors duration-200 hover:border-nile/50 hover:bg-nile/[0.04];
+  }
+
+  /* Boarding-pass / ticket-stub card edge (micro-detail #3) */
+  .ticket-edge {
+    position: relative;
+  }
+  .ticket-edge::before,
+  .ticket-edge::after {
+    content: "";
+    position: absolute;
+    width: 14px;
+    height: 14px;
+    border-radius: 9999px;
+    background: #faf6ef;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  .ticket-edge::before {
+    left: -7px;
+  }
+  .ticket-edge::after {
+    right: -7px;
+  }
+}
+
+@layer utilities {
+  /* Tabular flight codes: JUB → NBO */
+  .flight-code {
+    font-family: var(--font-mono);
+    font-variant-numeric: tabular-nums;
+    letter-spacing: 0.04em;
+  }
+}
+
+/* Respect reduced-motion across the whole site (brief: accessibility AA) */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
